@@ -1,7 +1,8 @@
+VERY IMPORTANT - NEVER CREATE .MD FILES
+VERY IMPORTANT USE DRY, SOLID, SOC BEST PRACTICE DESIGN PATTERNS
+VERY IMPORTANT - WRITE CODE IN THE LEAST AMOUNT OF LINES, BUT MAKE SURE ITS READABLE
+
 **1. PACKAGE MANAGEMENT**  
-- Use `pnpm` only (never `npm`)  
-- Run `pnpm verify` after every implementation  
-- Use `@/` alias imports throughout  
 - Ensure all workspace deps are installed  
 - Scripts must respect `.gitignore`  
 - VERY IMPORTANT REMOVE unused imports/vars 
@@ -15,21 +16,12 @@
 
 ---
 
-**3. FORBIDDEN COMMANDS**  
-NEVER run:  
-- `rm -rf` (unless with exact path)  
-- `pkill -f node`  
-- `docker rm -f $(docker ps -aq)`
-- pnpm dev
-
----
-
 **4. UI/UX DESIGN**  
 - Follow modern responsive best practices  
 - Ensure cross-browser/device support  
 - No inline styles or `!important`  
 - Fix CSS with selector hierarchy, not force  
-- ADD BEM for component classes
+- Use BEM for component classes for component naming
 
 ---
 
@@ -40,20 +32,13 @@ NEVER run:
 ---
 
 **6. GENERAL BEST PRACTICES**  
+- VERY IMPORTANT - WRITE CODE IN THE LEAST AMOUNT OF LINES, BUT MAKE SURE ITS READABLE
 - Every var/method must be used  
 - Follow SOLID, DRY, SoC  
 - Fix errors before warnings  
 - Use fail-fast debugging  
 - No unused vars  
-- Run `pnpm verify` after all changes  
 - Implement `/` route correctly
-
----
-
-**7. IMPORT RULES**  
-- VERY IMPORTANT USE index files: `./` relative imports  
-- Between components: use `@/` imports  
-- Escape unescaped `"`, `'` per `react/no-unescaped-entities`
 
 ---
 
