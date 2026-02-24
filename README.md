@@ -1,7 +1,12 @@
-VERY IMPORTANT - NEVER CREATE .MD FILES
-
+VERY IMPORTANT - Change Summary's should include bullet point benefits of each change
+VERY IMPORTANT IF ASKED LOC use scc
+VERY IMPORTANT - IMPORTS MUST BE AT THE TOP OF THE FILE
+VERY IMPORTANT YEAR IS 2026 NOW
+VERY IMPORTANT I PREFER HUMAN READABLE CODE OVER COMMENTS
+VERY IMPORANT EVERY REQUEST DETERMINE WHICH SUB AGENT TO USE AND IF IT CAN BE PARALLELIZED
+VERY IMPORTANT FIX WARNINGS AND ERRORS
+VERY IMPORTANT - AVOID CREATING .MD FILES UNLESS GIVEN PERMISSION
 VERY IMPORTANT USE DRY, SOLID, SOC BEST PRACTICE DESIGN PATTERNS
-
 VERY IMPORTANT - WRITE CODE IN THE LEAST AMOUNT OF LINES, BUT MAKE SURE ITS READABLE
 
 **1. PACKAGE MANAGEMENT**  
@@ -19,11 +24,14 @@ VERY IMPORTANT - WRITE CODE IN THE LEAST AMOUNT OF LINES, BUT MAKE SURE ITS READ
 ---
 
 **4. UI/UX DESIGN**  
+- VERY IMPORTANT: Prefer shadcn/ui (components/ui/) and AI Elements (components/ai-elements/) over building custom components
+- Only build custom components when no library component exists
+- Use Tailwind utilities for layout, spacing, and responsive design (not for rebuilding buttons, dialogs, cards, etc.)
 - Follow modern responsive best practices  
 - Ensure cross-browser/device support  
 - No inline styles or `!important`  
 - Fix CSS with selector hierarchy, not force  
-- Use BEM for component classes for component naming
+- Use cn() utility for conditional Tailwind classes
 
 ---
 
